@@ -1,0 +1,9 @@
+c:\users\d369if8\documents\visual studio 2012\Projects\aula-1\aula-1\bin\Debug\aula-1.exe.config
+c:\users\d369if8\documents\visual studio 2012\Projects\aula-1\aula-1\bin\Debug\aula-1.exe
+c:\users\d369if8\documents\visual studio 2012\Projects\aula-1\aula-1\bin\Debug\aula-1.pdb
+c:\users\d369if8\documents\visual studio 2012\Projects\aula-1\aula-1\obj\Debug\aula-1.csprojResolveAssemblyReference.cache
+c:\users\d369if8\documents\visual studio 2012\Projects\aula-1\aula-1\obj\Debug\aula_1.Properties.Resources.resources
+c:\users\d369if8\documents\visual studio 2012\Projects\aula-1\aula-1\obj\Debug\aula-1.csproj.GenerateResource.Cache
+c:\users\d369if8\documents\visual studio 2012\Projects\aula-1\aula-1\obj\Debug\aula-1.exe
+c:\users\d369if8\documents\visual studio 2012\Projects\aula-1\aula-1\obj\Debug\aula-1.pdb
+c:\users\d369if8\documents\visual studio 2012\Projects\aula-1\aula-1\obj\Debug\aula_1.frmPrincipal.resources
