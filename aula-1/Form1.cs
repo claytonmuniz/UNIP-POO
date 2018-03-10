@@ -12,7 +12,7 @@ namespace aula_1
 {
     public partial class frmPrincipal : Form
     {
-        Controle controle = new Controle();
+        
         public frmPrincipal()
         {
             InitializeComponent();
@@ -40,7 +40,14 @@ namespace aula_1
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-                       lblResultado.Text = controle.calcular(txbPrimeiroNumero.Text, txbSegundoNumero.Text, "+");
+            Controle controle = new Controle(txbPrimeiroNumero.Text, txbSegundoNumero.Text, "+");
+            if (controle.mensagem.Equals(""))
+            {
+                lblResultado.Text = controle.Resposta;
+            }
+            else 
+            {MessageBox.Show(controle.mensagem
+
 
         }
 
@@ -51,25 +58,22 @@ namespace aula_1
 
         private void lblResultado_Click(object sender, EventArgs e)
         {
-
+            Controle controle = new Controle(
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
            
-            lblResultado.Text = controle.calcular(txbPrimeiroNumero.Text, txbSegundoNumero.Text, "-");
         }
 
         private void btnDivisao_Click(object sender, EventArgs e)
         {
             
-            lblResultado.Text = controle.calcular(txbPrimeiroNumero.Text, txbSegundoNumero.Text, "/");
         }
 
         private void btnMultiplicacao_Click(object sender, EventArgs e)
         {
             
-            lblResultado.Text = controle.calcular(txbPrimeiroNumero.Text, txbSegundoNumero.Text, "*");
         }
     }
 }
