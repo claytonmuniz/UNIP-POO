@@ -17,10 +17,35 @@ namespace aula_1
         {
             InitializeComponent();
         }
-        
+
+        private void Executar(String op)
+        {
+            Modelo.Controle controle = new Modelo.Controle();
+            controle.num1 = txbPrimeiroNumero.Text;
+            controle.num2 = txbSegundoNumero.Text;
+            controle.op = op;
+            controle.Executar();
+            if (controle.mensagem.Equals(""))
+            {
+                lblResultado.Text = controle.resposta;
+
+            }
+            else
+            {
+                MessageBox.Show(controle.mensagem);
+                txbPrimeiroNumero.Clear();
+                txbSegundoNumero.Clear();
+                lblResultado.Text = "Resultado";
+                txbPrimeiroNumero.Focus();
+            }
+
+        }
+
+
+
         private void button1_Click(object sender, EventArgs e)
         {
-           
+     
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -40,15 +65,7 @@ namespace aula_1
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            Controle controle = new Controle(txbPrimeiroNumero.Text, txbSegundoNumero.Text, "+");
-            if (controle.mensagem.Equals(""))
-            {
-                lblResultado.Text = controle.Resposta;
-            }
-            else 
-            {MessageBox.Show(controle.mensagem
-
-
+            Executar("+");
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -58,22 +75,22 @@ namespace aula_1
 
         private void lblResultado_Click(object sender, EventArgs e)
         {
-            Controle controle = new Controle(
+          
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-           
+            Executar("-");
         }
 
         private void btnDivisao_Click(object sender, EventArgs e)
         {
-            
+            Executar("/");
         }
 
         private void btnMultiplicacao_Click(object sender, EventArgs e)
         {
-            
+            Executar("*");
         }
     }
 }
