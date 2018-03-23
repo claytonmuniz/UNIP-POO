@@ -44,7 +44,7 @@
             // lblPrimeiroNumero
             // 
             this.lblPrimeiroNumero.AutoSize = true;
-            this.lblPrimeiroNumero.Location = new System.Drawing.Point(191, 68);
+            this.lblPrimeiroNumero.Location = new System.Drawing.Point(53, 38);
             this.lblPrimeiroNumero.Name = "lblPrimeiroNumero";
             this.lblPrimeiroNumero.Size = new System.Drawing.Size(120, 13);
             this.lblPrimeiroNumero.TabIndex = 2;
@@ -53,7 +53,8 @@
             // 
             // txbPrimeiroNumero
             // 
-            this.txbPrimeiroNumero.Location = new System.Drawing.Point(191, 84);
+            this.txbPrimeiroNumero.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.txbPrimeiroNumero.Location = new System.Drawing.Point(53, 54);
             this.txbPrimeiroNumero.Name = "txbPrimeiroNumero";
             this.txbPrimeiroNumero.Size = new System.Drawing.Size(185, 20);
             this.txbPrimeiroNumero.TabIndex = 3;
@@ -62,7 +63,7 @@
             // lblSegundoNumero
             // 
             this.lblSegundoNumero.AutoSize = true;
-            this.lblSegundoNumero.Location = new System.Drawing.Point(191, 124);
+            this.lblSegundoNumero.Location = new System.Drawing.Point(53, 94);
             this.lblSegundoNumero.Name = "lblSegundoNumero";
             this.lblSegundoNumero.Size = new System.Drawing.Size(125, 13);
             this.lblSegundoNumero.TabIndex = 4;
@@ -70,7 +71,8 @@
             // 
             // txbSegundoNumero
             // 
-            this.txbSegundoNumero.Location = new System.Drawing.Point(191, 140);
+            this.txbSegundoNumero.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txbSegundoNumero.Location = new System.Drawing.Point(53, 110);
             this.txbSegundoNumero.Name = "txbSegundoNumero";
             this.txbSegundoNumero.Size = new System.Drawing.Size(185, 20);
             this.txbSegundoNumero.TabIndex = 6;
@@ -79,7 +81,7 @@
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
-            this.lblResultado.Location = new System.Drawing.Point(306, 209);
+            this.lblResultado.Location = new System.Drawing.Point(168, 179);
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.Size = new System.Drawing.Size(55, 13);
             this.lblResultado.TabIndex = 7;
@@ -88,7 +90,7 @@
             // 
             // btnSoma
             // 
-            this.btnSoma.Location = new System.Drawing.Point(192, 180);
+            this.btnSoma.Location = new System.Drawing.Point(54, 150);
             this.btnSoma.Name = "btnSoma";
             this.btnSoma.Size = new System.Drawing.Size(44, 33);
             this.btnSoma.TabIndex = 8;
@@ -99,7 +101,7 @@
             // 
             // btnDivisao
             // 
-            this.btnDivisao.Location = new System.Drawing.Point(242, 180);
+            this.btnDivisao.Location = new System.Drawing.Point(104, 150);
             this.btnDivisao.Name = "btnDivisao";
             this.btnDivisao.Size = new System.Drawing.Size(44, 30);
             this.btnDivisao.TabIndex = 9;
@@ -109,7 +111,7 @@
             // 
             // btnSubtracao
             // 
-            this.btnSubtracao.Location = new System.Drawing.Point(192, 216);
+            this.btnSubtracao.Location = new System.Drawing.Point(54, 186);
             this.btnSubtracao.Name = "btnSubtracao";
             this.btnSubtracao.Size = new System.Drawing.Size(44, 31);
             this.btnSubtracao.TabIndex = 10;
@@ -119,7 +121,7 @@
             // 
             // btnMultiplicacao
             // 
-            this.btnMultiplicacao.Location = new System.Drawing.Point(242, 215);
+            this.btnMultiplicacao.Location = new System.Drawing.Point(104, 185);
             this.btnMultiplicacao.Name = "btnMultiplicacao";
             this.btnMultiplicacao.Size = new System.Drawing.Size(44, 31);
             this.btnMultiplicacao.TabIndex = 11;
@@ -132,8 +134,8 @@
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkGray;
-            this.ClientSize = new System.Drawing.Size(555, 367);
+            this.BackColor = System.Drawing.Color.DeepPink;
+            this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.btnMultiplicacao);
             this.Controls.Add(this.btnSubtracao);
             this.Controls.Add(this.btnDivisao);

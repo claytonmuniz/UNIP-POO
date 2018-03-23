@@ -20,11 +20,7 @@ namespace aula_1
 
         private void Executar(String op)
         {
-            Modelo.Controle controle = new Modelo.Controle();
-            controle.num1 = txbPrimeiroNumero.Text;
-            controle.num2 = txbSegundoNumero.Text;
-            controle.op = op;
-            controle.Executar();
+            Modelo.Controle controle = new Modelo.Controle(txbPrimeiroNumero.Text, txbSegundoNumero.Text, op);
             if (controle.mensagem.Equals(""))
             {
                 lblResultado.Text = controle.resposta;

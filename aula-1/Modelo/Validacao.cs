@@ -6,15 +6,13 @@ using System.Threading.Tasks;
 
 namespace aula_1.Modelo
 {
-    public class Validacao
+    public class Validacao: absprop 
     {
-        public String num1;
-        public String num2;
-        public Double n1;
-        public Double n2;
-        public String mensagem;
-        public String op;
-
+        
+         public Validacao(String num1, String num2, String op): base(num1, num2, op)
+        {
+            Validar();
+        }
         public void Validar()
         {
             this.mensagem = "";

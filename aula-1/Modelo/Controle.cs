@@ -6,29 +6,21 @@ using System.Threading.Tasks;
 
 namespace aula_1.Modelo
 {
-    public class Controle
+    public class Controle: absprop
     {
-        public String num1;
-        public String num2;
-        public String op;
-        public String resposta;
-        public String mensagem;
+        public Controle(String num1, String num2, String op): base(num1, num2, op)
+        {
+            this.Executar();
+        }
 
         public void Executar()
         {
             this.mensagem = "";
-            Validacao validacao = new Validacao();
-            validacao.num1 = this.num1;
-            validacao.num2 = this.num2;
-            validacao.op = this.op;
+            Validacao validacao = new Validacao(this.num1,this.num2,this.op );
             validacao.Validar();
             if (validacao.mensagem.Equals(""))
             {
-                Calculos calculos = new Calculos();
-                calculos.n1 = validacao.n1;
-                calculos.n2 = validacao.n2;
-                calculos.op = this.op;
-                calculos.Calcular();
+                Calculos calculos = new Calculos(validacao.n1, validacao.n2, this.op);
                 this.resposta = calculos.resposta;
             }
             else
